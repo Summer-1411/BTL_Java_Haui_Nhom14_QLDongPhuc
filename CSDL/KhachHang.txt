@@ -1,0 +1,3 @@
+admin,Lê Văn Tùng,Hà Nội,admin@gmail.com,373984007,admin,admin,admin
+2020606601,Nguyễn Viết Hải,Hà Nội,nguyenviethai@gmail.com,0373984001,KTMP4,14/11/2002,K15
+2020606602,Nguyễn Thị Yến,Thái Nguyên,nguyenthiyen@gmail.com,0373984002,KTMP1,06/04/2002,K15

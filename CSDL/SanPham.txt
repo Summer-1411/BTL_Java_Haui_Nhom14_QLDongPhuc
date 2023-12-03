@@ -1,0 +1,2 @@
+SP01,Kingston 252,Ram,Chiếc,1000,100.0
+SP03,Kingston,SSD,Chiếc,2000,200.0
