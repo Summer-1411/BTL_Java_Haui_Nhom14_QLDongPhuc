@@ -8,6 +8,7 @@ package DangNhap;
 
 import Entity.CurrentAccount;
 import Entity.TaiKhoan;
+import SanPham.SanPhamForm;
 import javax.swing.JOptionPane;
 
 //import NhaCungCap.QLyNCCForm;
@@ -136,7 +137,7 @@ public class MenuForm extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82)
+                .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnQLDH, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -147,17 +148,16 @@ public class MenuForm extends javax.swing.JFrame {
                     .addComponent(btnQLSP, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnThongKe, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnQLSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQLSPActionPerformed
-//        QLySPForm formQLSP = new QLySPForm();
-//        formQLSP.setVisible(true);
-//        this.dispose();
-JOptionPane.showMessageDialog(this, CurrentAccount.account.getTenTK() + CurrentAccount.account.getRole(), "Thông báo", JOptionPane.ERROR_MESSAGE);
+        SanPhamForm sanPhamForm = new SanPhamForm();
+        sanPhamForm.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnQLSPActionPerformed
 
     private void btnQLTKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQLTKActionPerformed

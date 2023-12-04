@@ -4,6 +4,11 @@
  */
 package Entity;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -76,7 +81,55 @@ public class SanPham {
     public int getSoLuongCon() {
         return soLuongCon;
     }
-    
+
+    public void setMaSp(String maSp) {
+        this.maSp = maSp;
+    }
+
+    public void setTenSp(String tenSp) {
+        this.tenSp = tenSp;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setDonGia(double donGia) {
+        this.donGia = donGia;
+    }
+
+    public void setSoLuongCon(int soLuongCon) {
+        this.soLuongCon = soLuongCon;
+    }
+    //get data from database
+    public static List<SanPham> getSanPhamList() {
+        List<SanPham> listSP = new ArrayList<SanPham>();
+        String fileName = "CSDL\\SanPham.txt";
+        String line;
+
+        try {
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] fields = line.split(",");
+                String maSP = fields[0];
+                String tenSP = fields[1];
+                String size = fields[2];
+                double donGia = Double.parseDouble(fields[3]);
+                int soLuongCon = Integer.parseInt(fields[4]);
+                
+                
+                SanPham SP = new SanPham(maSP, tenSP, size, donGia, soLuongCon);
+                listSP.add(SP);
+            }
+
+            bufferedReader.close();
+        } catch (IOException e) {
+            System.out.println("Error reading file " + fileName);
+        }
+        return listSP;
+    }
     
     
 }

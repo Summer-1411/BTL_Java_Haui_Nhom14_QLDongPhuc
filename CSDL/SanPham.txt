@@ -1,2 +1,6 @@
-SP01,Kingston 252,Ram,Chiếc,1000,100.0
-SP03,Kingston,SSD,Chiếc,2000,200.0
+SP01,Quần áo thể dục,S,200000.0,500
+SP02,Quần áo thể dục123,M,200000.0,600
+SP04,Quần áo thể dục,XL,200000.0,300
+SP05,Quần áo thể dục,XXL,200000.0,200
+SP06,Áo đồng phục,S,180000.0,400
+SP07,Áo đồng phục,M,180000.0,550
